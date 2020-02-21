@@ -43,6 +43,12 @@ body {
     font-size: 1.05em;
     line-height: 1.25em;
 }
+a {
+    color: blue;
+    &:visited {
+        color: darkblue;
+    }
+}
 main {
     section {
         background: $background;
@@ -52,6 +58,9 @@ main {
     grid-area: intro;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    .social {
+        padding: 1em;
+    }
     h1 {
         text-align: center;
         padding: 2rem;
@@ -75,7 +84,7 @@ main {
     grid-template-columns: 1fr 1fr;
     padding-top: 2.5vh;
     p {
-        padding: 1em;
+        padding: .5em;
     }
     h2 {
         text-align: center;
@@ -90,7 +99,7 @@ main {
     grid-template-columns: 1fr 1fr;
     padding-top: 2.5vh;
     p {
-        padding: 1em;
+        padding: .5em;
     }
     .social-links {
         display: inline-flex;
