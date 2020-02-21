@@ -1,0 +1,62 @@
+html {
+  margin: 0 auto;
+}
+
+body {
+  background: white;
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 10vh 20vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 20vh 30vh 20vh;
+      grid-template-rows: 20vh 30vh 20vh;
+      grid-template-areas: "intro" "about"  "contact";
+}
+
+main {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+main section {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.intro {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: intro;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.intro h1 {
+  padding: 2rem;
+}
+
+.about {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: about;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  /* margin-top: 10vh; */
+}
+
+.contact {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: contact;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  /* margin-top: 10vh; */
+}

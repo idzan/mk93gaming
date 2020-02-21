@@ -1,4 +1,13 @@
+html {
+    margin: 0 auto;
+    
+}
 body {
+    background: white;
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 10vh 20vw;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20vh 30vh 20vh;
@@ -7,11 +16,29 @@ body {
         "about" 
         "contact";
 }
+main {
+    section {
+        background: rgba($color: white, $alpha: 0.5);
+    }
+    background: rgba($color: white, $alpha: 0.5);
+}
 .intro {
     grid-area: intro;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     h1 {
         padding: 2rem;
     }
+}
+.about {
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* margin-top: 10vh; */
+}
+.contact {
+    grid-area: contact;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* margin-top: 10vh; */
 }
