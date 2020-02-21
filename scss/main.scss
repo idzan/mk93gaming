@@ -30,7 +30,7 @@ html {
 body {
     background: top / cover url("../img/background.jpg");
     font-family: 'Source Sans Pro';
-    margin: 10vh 20vw;
+    margin: 5vh 20vw;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20vh 30vh 20vh;
@@ -73,7 +73,7 @@ main {
     grid-area: about;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 5vh;
+    padding-top: 2.5vh;
     p {
         padding: 1em;
     }
@@ -88,7 +88,7 @@ main {
     grid-area: contact;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 5vh;
+    padding-top: 2.5vh;
     p {
         padding: 1em;
     }
