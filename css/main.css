@@ -134,7 +134,7 @@ main section {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 1em;
+  padding: .25em;
   margin-right: 1em;
 }
 
