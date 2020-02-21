@@ -1,7 +1,13 @@
+:root :focus {
+  outline: solid 1px rgba(94, 94, 94, 0.5);
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: none;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -24,6 +30,8 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  font-size: 1.05em;
+  line-height: 1.25em;
 }
 
 main section {
@@ -43,6 +51,7 @@ main section {
 .intro h1 {
   text-align: center;
   padding: 2rem;
+  font-size: 2rem;
 }
 
 .intro .link {
@@ -73,6 +82,7 @@ main section {
 .about h2 {
   text-align: center;
   padding: 2rem;
+  font-size: 1.75rem;
 }
 
 .contact {
@@ -86,9 +96,18 @@ main section {
   padding-top: 10vh;
 }
 
+.contact .social-links {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 1em;
+  margin-right: 1em;
+}
+
 .contact h2 {
   text-align: center;
   padding: 2rem;
+  font-size: 1.75rem;
 }
 
 @media (max-width: 1025px) {
@@ -108,8 +127,8 @@ main section {
 }
 
 .icon {
-  width: 1.75em;
-  height: 1.75em;
+  width: 1.9em;
+  height: 1.9em;
 }
 
 .discord {
@@ -126,4 +145,10 @@ main section {
 
 .youtube {
   fill: #ff0000;
+}
+
+.mail {
+  width: 1.25em;
+  height: 1.25em;
+  fill: black;
 }
