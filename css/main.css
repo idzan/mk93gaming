@@ -87,7 +87,7 @@ main section {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  padding-top: 10vh;
+  padding-top: 5vh;
 }
 
 .about p {
@@ -111,7 +111,7 @@ main section {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  padding-top: 10vh;
+  padding-top: 5vh;
 }
 
 .contact p {
