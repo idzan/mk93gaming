@@ -51,7 +51,10 @@ main section {
 .intro h1 {
   text-align: center;
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .intro .link {
@@ -86,7 +89,10 @@ main section {
 .about h2 {
   text-align: center;
   padding: 2rem;
-  font-size: 1.75rem;
+  font-size: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .contact {
@@ -115,7 +121,10 @@ main section {
 .contact h2 {
   text-align: center;
   padding: 2rem;
-  font-size: 1.75rem;
+  font-size: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .contact .copyright {

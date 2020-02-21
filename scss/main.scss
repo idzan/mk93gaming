@@ -44,7 +44,8 @@ main {
     h1 {
         text-align: center;
         padding: 2rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
+        align-self: center;
     }
     .link {
         display: flex;
@@ -68,7 +69,8 @@ main {
     h2 {
         text-align: center;
         padding: 2rem;
-        font-size: 1.75rem;
+        font-size: 2rem;
+        align-self: center;
     }
 }
 .contact {
@@ -87,7 +89,8 @@ main {
     h2 {
         text-align: center;
         padding: 2rem;
-        font-size: 1.75rem;
+        font-size: 2rem;
+        align-self: center;
     }
     .copyright {
         font-size: 0.75em;
