@@ -1,0 +1,17 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 30vh 20vh;
+    grid-template-areas:
+        "intro"
+        "about" 
+        "contact";
+}
+.intro {
+    grid-area: intro;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    h1 {
+        padding: 2rem;
+    }
+}
