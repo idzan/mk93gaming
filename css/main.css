@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("../fonts/source-sans-pro.woff2") format("woff2"), url("../fonts/source-sans-pro.woff") format("woff");
+}
+
 :root :focus {
   outline: solid 1px rgba(94, 94, 94, 0.5);
 }
@@ -17,6 +24,7 @@ html {
 
 body {
   background: top/cover url("../img/background.jpg");
+  font-family: 'Source Sans Pro';
   margin: 10vh 20vw;
   display: -ms-grid;
   display: grid;
