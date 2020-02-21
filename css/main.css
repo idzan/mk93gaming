@@ -15,10 +15,11 @@ body {
   -ms-grid-rows: 20vh 30vh 20vh;
       grid-template-rows: 20vh 30vh 20vh;
       grid-template-areas: "intro" "about"  "contact";
-}
-
-main {
-  background: rgba(255, 255, 255, 0.5);
+  -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 main section {
@@ -36,6 +37,7 @@ main section {
 }
 
 .intro h1 {
+  text-align: center;
   padding: 2rem;
 }
 
@@ -47,7 +49,12 @@ main section {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  /* margin-top: 10vh; */
+  padding-top: 10vh;
+}
+
+.about h2 {
+  text-align: center;
+  padding: 2rem;
 }
 
 .contact {
@@ -58,5 +65,10 @@ main section {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  /* margin-top: 10vh; */
+  padding-top: 10vh;
+}
+
+.contact h2 {
+  text-align: center;
+  padding: 2rem;
 }
