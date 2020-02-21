@@ -79,6 +79,10 @@ main section {
   padding-top: 10vh;
 }
 
+.about p {
+  padding: 1em;
+}
+
 .about h2 {
   text-align: center;
   padding: 2rem;
@@ -96,6 +100,10 @@ main section {
   padding-top: 10vh;
 }
 
+.contact p {
+  padding: 1em;
+}
+
 .contact .social-links {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -108,6 +116,10 @@ main section {
   text-align: center;
   padding: 2rem;
   font-size: 1.75rem;
+}
+
+.contact .copyright {
+  font-size: 0.75em;
 }
 
 @media (max-width: 1025px) {
