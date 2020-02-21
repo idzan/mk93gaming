@@ -1,12 +1,16 @@
 html {
-  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: none;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
-  background: white;
-  background-image: url("../img/background.jpg");
-  background-position: center;
-  background-size: cover;
+  background: top/cover url("../img/background.jpg");
   margin: 10vh 20vw;
   display: -ms-grid;
   display: grid;
@@ -71,4 +75,20 @@ main section {
 .contact h2 {
   text-align: center;
   padding: 2rem;
+}
+
+@media (max-width: 1025px) {
+  body {
+    background: top/cover url("../img/background.jpg");
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .intro, .about, .contact {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
 }
