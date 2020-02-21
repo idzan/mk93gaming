@@ -27,7 +27,7 @@ body {
 }
 
 main section {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .intro {
@@ -43,6 +43,20 @@ main section {
 .intro h1 {
   text-align: center;
   padding: 2rem;
+}
+
+.intro .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.intro .link p::before {
+  content: "\00a0";
 }
 
 .about {
@@ -91,4 +105,25 @@ main section {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
   }
+}
+
+.icon {
+  width: 1.75em;
+  height: 1.75em;
+}
+
+.discord {
+  fill: #7289da;
+}
+
+.facebook {
+  fill: #3b5998;
+}
+
+.twitch {
+  fill: #6441a5;
+}
+
+.youtube {
+  fill: #ff0000;
 }
