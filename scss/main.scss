@@ -1,4 +1,5 @@
 $background: rgba($color: white, $alpha: 0.75);
+$webbg: rgba($color: black, $alpha: .95);
 $facebook: #3b5998;
 $youtube: #ff0000;
 $discord: #7289da;
@@ -28,16 +29,18 @@ html {
     box-sizing: inherit;
 }
 body {
-    background: top / cover url("../img/background.jpg");
+    background: $webbg;
+    /* background: top / cover url("../img/background.jpg"); */
     font-family: 'Source Sans Pro';
     margin: 5vh 20vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20vh 30vh 20vh;
+    grid-template-rows: 20vh 30vh 20vh 20vh;
     grid-template-areas:
         "intro"
         "about" 
-        "contact";
+        "contact"
+        "newsletter";
     align-self: center;
     align-items: flex-start;
     font-size: 1.05em;
@@ -116,13 +119,30 @@ main {
         font-size: 0.75em;
     }
 }
+.newsletter {
+    grid-area: newsletter;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 2.5vh;
+    form {
+        margin: 0 auto;
+        width: 100vw;
+        background-color: $background;
+    }
+}
+.policy {
+    padding: 2em;
+    h1 {
+        padding-bottom: 2vh;
+    }
+}
 @media (max-width: 1025px) {
     body {
         background: top / cover url("../img/background.jpg");
         display: grid;
         grid-template-columns: auto;
     }
-    .intro, .about, .contact {
+    .intro, .about, .contact, .newsletter {
         display: grid;
         grid-template-columns: auto;
     }

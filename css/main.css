@@ -23,16 +23,17 @@ html {
 }
 
 body {
-  background: top/cover url("../img/background.jpg");
+  background: rgba(0, 0, 0, 0.95);
+  /* background: top / cover url("../img/background.jpg"); */
   font-family: 'Source Sans Pro';
   margin: 5vh 20vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 20vh 30vh 20vh;
-      grid-template-rows: 20vh 30vh 20vh;
-      grid-template-areas: "intro" "about"  "contact";
+  -ms-grid-rows: 20vh 30vh 20vh 20vh;
+      grid-template-rows: 20vh 30vh 20vh 20vh;
+      grid-template-areas: "intro" "about"  "contact" "newsletter";
   -ms-grid-row-align: center;
       align-self: center;
   -webkit-box-align: start;
@@ -151,6 +152,31 @@ main section {
   font-size: 0.75em;
 }
 
+.newsletter {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: newsletter;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding-top: 2.5vh;
+}
+
+.newsletter form {
+  margin: 0 auto;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.policy {
+  padding: 2em;
+}
+
+.policy h1 {
+  padding-bottom: 2vh;
+}
+
 @media (max-width: 1025px) {
   body {
     background: top/cover url("../img/background.jpg");
@@ -159,7 +185,7 @@ main section {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
   }
-  .intro, .about, .contact {
+  .intro, .about, .contact, .newsletter {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto;
